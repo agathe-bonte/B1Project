@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5rem;
+}
+
+p{
+    margin: 0 0 10px 0;
+}
+
+.header{
+    padding: 4em 6em 4em 6em;
+    background-color: #efefef;
+}
+
+.title1{
+    font-size: 6rem;
+    font-family: "DM Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 3rem 0 1.5rem 0;
+}
+.title2{
+    font-size: 3rem;
+    font-family: "DM Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.block-info{
+    max-width: 250px;
+    text-align: center;
+    background: #10e89f;
+    padding: .5em 1em .5em 1em;
+    font-size: 1.2rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    margin: .5rem 0 2rem 0;
+}
+
+.circle-green{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #10e89f;
+    display: inline-block;
+}
+
+.rte{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.link{
+    text-decoration: underline;
+    color: #10e89f;
+}
+
+/* Section */
+section{
+    margin: 4rem 6rem 4rem 6rem;
+    padding: 2em 0;
+}
+
+.source{
+    color: #ccc;
+    font-size: .8rem;
+    font-style: italic;
+}

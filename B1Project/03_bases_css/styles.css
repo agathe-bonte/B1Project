@@ -1,0 +1,117 @@
+/* Ma feuille de style */
+
+
+/********************************************
+    balise {
+        propriété1: valeur1;
+        propriété2: valeur2;
+    }
+*********************************************/
+
+h1{
+    color: blue;
+    font-size: 80px;
+}
+
+/************ AVEC LE SELECTEUR *************/
+
+h2{
+    color: purple;
+    text-decoration: underline;
+}
+
+/************ ATTRITBUT CLASSE *************/
+
+.c-blue{
+    color: green;
+}
+
+.c-blue span{
+    color: red;
+}
+/************ ATTRITBUT ID *************/
+
+#logo {
+    width: 300px;
+    height: 300px;
+}
+
+/***** Selectionnner plusiseurs balises *****/
+
+h1, p {
+    color: blue;
+}
+
+/********************************************
+***************  FONT-SIZE  *****************
+
+    taille absolue en PX > valeur fixe
+    taille relative en EM, REM > égale au %
+
+*********************************************/
+
+.elem0{
+    font-size: 16px;
+}
+
+.elem1{
+    font-size: 1em;
+}
+.elem2{
+    font-size: 1.5em;
+}
+.elem3{
+    font-size: 2em;
+}
+
+/********************************************
+************  FONT-FAMILY NATIVES ***********
+
+*ARIAL
+*FUTURA
+*Helvetica
+*Impact
+*Trebuchet MS
+*Verdana
+
+*********************************************/
+
+.elem1{
+    font-family: Impact, Helvetica, sans-serif;
+    color: #333333;
+}
+
+/************  GOOGLE FONT ***********/
+
+.elem2{
+    color: #000000;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/************ weight ***********/
+.elem3{
+    color: #000000;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+/************ style ***********/
+.italic{
+    font-style: italic;
+}
+
+/************ text-decoration ***********/
+.lineThrough{
+    text-decoration: line-through;
+}
+.underline{
+    text-decoration: underline;
+}
+/************ text-align ***********/
+.elem4{
+    color: #000000;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+}
