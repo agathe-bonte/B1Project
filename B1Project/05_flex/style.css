@@ -1,0 +1,42 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.box{
+    flex: 1; /* équivaut à flex-grow:1; flex-shrink:1; flex-basis:0 */
+    border: 1px solid #ccc;
+    padding: 2em;
+}
+
+.box-1{
+    background: #fa81cc;
+}
+
+.box-2{
+    background: #81faab;
+}
+
+.box-3{
+    background: #9bbcf5;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-col.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
