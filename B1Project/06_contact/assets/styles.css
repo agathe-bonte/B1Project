@@ -1,0 +1,127 @@
+/* ajouter une police à partir d'un dossier
+***** déposer vos polices dans un dossier font
+****** déclarer vos polices dans votre fichier css 
+******* Utiliser la propriété @font-dace
+*/
+@font-face {
+    font-family: "PlayfairDisplaySC-Regular" ;
+    src: url("./font/PlayfairDisplay-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font: normal 10px #000, Arial, Verdana, Helvetica, sans-serif;
+    color: #000;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Supprimer les marges/ padding native du body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*************************** FLEX_BOX *******************************************
+*** Utilisation de flex pour aligner des éléments 
+**** display:flex se déclare sur le parent et s'applique sur les élements enfants
+***** align-item:stretch : pour étirer
+**********************************************************************************/
+.contact{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Utiliser les virgules pour appliquer le même style à plusieurs éléments */
+.contact-illu,
+.contact-content{
+    flex: 1;
+    align-content: center;
+    padding: 4em;
+}
+
+/******************** DEGRADE ************************
+** Utiliser background-image pour générer des dégradés 
+*** https://mycolor.space/gradient
+*****************************************************/
+
+.contact-illu{
+    background-image: linear-gradient(to right bottom, #ffa3a7, #fca8c2, #f1afda, #e0b9ed, #ccc4f9, #b5d0ff, #9fdbff, #93e4fe, #93efee, #acf5d6, #d4f8c0, #fff6b6);
+}
+
+/* margin auto pour centrer */
+.illu-contact {
+    width: 430px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Utiliser box-shadow pour faire des ombres */
+.illu-contact img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0 ,0, .2);
+}
+
+/* Utiliser border-radius pour faire des arrondis */
+.btn{
+    display: block;
+    padding: 1em 2em;
+    margin: 1.5rem 0;
+    background: #FFF;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+/* Utiliser border-radius pour faire des arrondis */
+.contact-content{
+    background: #FFFAE5;
+}
+
+.subtitle{
+    display: block;
+    font-size: 2.5rem;
+}
+
+.title1{
+    font-family: "PlayfairDisplaySC-Regular", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-rs{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ico-rs{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.ico-rs svg{
+    width: 39px;
+    padding: 0.47em;
+}
+
+/******* responsive *******/
+@media only screen and (max-width: 1024px){
+    .contact{
+        flex-direction: column;
+        width: 100%;
+    }
+}
