@@ -1,0 +1,50 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    font-family: "Karla", sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+.item-info{
+    font-size: 1.4rem;
+    padding: 0.4em 1.5em;
+    text-align: center;
+    width: 120px;
+    border-radius: 35px;
+
+}
+
+.info-primary{
+    margin-right:1rem ;
+    background:  rgba(253, 129, 129, 0.308);
+    border: 1px solid rgba(253, 129, 129, .6);
+}
+.info-secondary{
+    background:  rgba(128, 242, 157, 0.308);
+    border: 1px solid rgba(25, 114, 32, 0.6);
+}
+
+.item-icone{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.application-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-wrapper{
+    display: flex;
+    align-items: center;
+}

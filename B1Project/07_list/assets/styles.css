@@ -1,0 +1,93 @@
+/* ajouter une police à partir d'un dossier
+***** déposer vos polices dans un dossier font
+****** déclarer vos polices dans votre fichier css 
+******* Utiliser la propriété @font-dace
+*/
+@font-face {
+    font-family: "PlayfairDisplaySC-Regular" ;
+    src: url("./font/PlayfairDisplay-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font: normal 10px #000, Arial, Verdana, Helvetica, sans-serif;
+    color: #000;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Supprimer les marges/ padding native du body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 3rem 0 1.5rem 0;
+}
+
+p{
+    margin: 1rem 0;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.application{
+    display: flex;
+    flex-direction: column; 
+
+}
+
+.app-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.app-list__icone{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background: #ebebeb;
+    background: linear-gradient(90deg,rgba(235, 235, 235, 1) 0%, rgba(166, 166, 166, 1) 93%);
+}
+
+.app-list__info{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-bubble{
+    margin: 0 1rem;
+    padding: .4em 1.5em;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.info-primary{
+    background-color: rgba(252, 159, 159, .4);
+    color: #cd4646;
+    border: 1px solid rgba(255, 135, 135, 0.4);
+}
+
+.info-secondary{
+    background-color:#d5ffdc;
+    color: #195623;
+    border: 1px solid rgba(116, 166, 124, 0.4);
+}
+
+/******* responsive *******/
+@media only screen and (max-width: 1024px){
+
+}
