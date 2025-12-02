@@ -1,0 +1,163 @@
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+ 
+h2{
+    font-size: 2rem;
+    margin: .5rem 0 2rem 0;
+    font-weight: 400;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+.header{
+    padding: 1em 2em;
+    background: #ffa6a6;
+}
+
+.main{
+    padding: 0 1em;
+}
+.section{
+    margin: 1rem 0;
+    padding: 1em 2em;
+    background: #a6f8bc;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.article{
+    margin: 1rem 0;
+    padding: 1em 2em;
+    background: #a6cff8;
+    border-radius: 20px;
+}
+.aside{
+    margin: 1rem 0;
+    padding: 1em 2em;
+    background: #edf9b8;
+    border-radius: 20px;
+}
+
+.footer{
+    padding: 2em 1em;
+    background: rgb(176, 160, 253);
+}
+
+.btn{
+    display: block;
+    padding: 1em 1.5em;
+    background: #f588f9;
+    color: #FFF;
+}
+
+.pub{
+    padding: 4vw;
+    background: #FFF;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logo{
+    padding: 1em;
+    background: #FFF;
+    border-radius: 10px;
+    text-align: center; 
+    font-weight: 600;
+}
+
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+
+
+.item {
+    background: white;
+    display: inline-block;
+    padding: 0.2em 1em;
+    margin: .5rem;
+    border-radius: 10px;
+}
+
+
+
+.cta{
+    display: inline-block;
+    padding: 0.8em 1em;
+    margin: 1rem 0;
+    background: white;
+    border-radius: 10px;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1024px){
+    body{
+        background: #f9cfcf;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au min 1280px */
+@media screen and (min-width: 1024px){
+    .container{
+        width: 100%;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px){
+
+}
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait){
+
+}
+

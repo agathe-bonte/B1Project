@@ -1,0 +1,205 @@
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+ 
+h1{
+    font-size: 2rem;
+    margin: 5rem 0;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bg{
+    background: url('img/avatar.jpg') 0 0 no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+.background-img {
+    width: 300px;
+    height: 300px;
+    background: url(img/avatar.jpg) 0 0 no-repeat;
+}
+
+.card{
+    flex: 1;
+    margin: 0 1rem;
+    box-shadow: 0 0 10px #CCC;
+    padding: 1em;
+}
+
+.circle-1{
+    background: blue;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    border: 5px solid blue;
+}
+
+/******************************************
+            Les formes
+
+            rond
+            rectangle
+            carré
+
+*******************************************/
+.circle{
+    background: blue;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    /* centrer au milieu */
+    margin: 0 auto;
+    /* mettre en overflow hidden pour cacher ce qui dépasse */
+    overflow: hidden;
+}
+
+.rectangle{
+    background: red;
+    width: 18.5rem;
+    height: 10rem;
+}
+
+.square{
+    width: 15rem;
+    height: 15rem;
+    background: yellow;
+    /* centrer au milieu */
+    margin: 0 auto;
+}
+
+
+/******************************************
+            POSITIONS
+
+            static -- position par default
+            relative
+            absolute
+            fixed
+
+*******************************************/
+
+
+.position-relative {
+    position: relative;
+}      
+
+.positon-absolute {
+    position: absolute;
+}      
+
+.positon-fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+}       
+
+/******************************************
+            Masque de forme 
+
+*******************************************/
+
+
+.circle-image img{
+    /* mettre l'enfant en position absolute */
+    position: absolute;
+    top: 0;
+    left: O;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rectangle-bg{
+    background: red url(img/avatar.jpg) 50% 0px no-repeat;
+    width: auto;
+    height: 10rem;
+    background-size: contain;
+}
+
+.scare-before:before{
+    /* ajouter le content */
+    content: "";
+    /* position absolute */
+    position: absolute;
+    /* ajouter la position sur l'axe X Y */
+    top: 0;
+    left: 0;
+    /* ajouter la taille de l'image */
+    width: 100%;
+    height: 100%;
+    /* ajouter le background image */
+    background: url(img/avatar.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+.square-1{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: yellow;
+}
+
+.square-1:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('img/avatar.png') 0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.square-2{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: yellow;
+    margin-top: 1rem;
+}
+
+.square-2:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+}
+.square-2::after{
+    content: "Hello";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: green;
+}
