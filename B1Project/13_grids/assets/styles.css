@@ -1,0 +1,143 @@
+/* ajouter une police à partir d'un dossier
+***** déposer vos polices dans un dossier font
+****** déclarer vos polices dans votre fichier css 
+******* Utiliser la propriété @font-dace
+*/
+@font-face {
+    font-family: "PlayfairDisplaySC-Regular" ;
+    src: url("./font/PlayfairDisplay-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font: normal 10px #000, Arial, Verdana, Helvetica, sans-serif;
+    color: #000;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Supprimer les marges/ padding native du body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+/* transformer votre élément en grille comme un tableau */
+/* 
+* fr = fraction de l'espace disponible
+* 1fr 1fr 1fr = 3 parts égales
+*/
+
+.container-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
+    gap: 20px;
+}
+/* Grid-template-columns */
+.container-grid-2{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap:20px;
+}
+
+/* Grid-template-rows */
+.container-grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap:20px;
+}
+
+/* Définissez les tailles de vos éléments */
+.container-grid-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+
+.container-grid-4 > .box-red {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.container-grid-4 > .box-green {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-grid-4 > .box-green {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.container-grid-4 > .box-purple {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.container-grid-4 > .box-pink {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-grid-4 > .box-orange {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.container-grid-4 > .box-grey {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.box{
+    padding: .5em;
+    text-align: center;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.box-red{
+    background-color: rgb(255, 96, 96);
+}
+
+.box-blue{
+    background-color: rgb(140, 147, 236);
+}
+
+.box-yellow{
+    background-color: rgb(237, 231, 114);
+}
+.box-green{
+    background-color: rgb(137, 240, 139);
+}
+.box-orange{
+    background-color: rgb(233, 132, 54);
+}
+.box-brown{
+    background-color: rgb(121, 47, 7);
+}
+.box-grey{
+    background-color: rgb(227, 206, 206);
+}
+.box-pink{
+    background-color: rgb(244, 154, 199);
+}
+.box-purple{
+    background-color: rgb(207, 119, 244);
+}
+
